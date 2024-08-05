@@ -46,7 +46,7 @@ function SignIn() {
           console.log(response.data);
 
           const responsearaha = await axios.post(
-            "http://localhost:8080/api/auth/google",
+            "https://alumni-site.onrender.com/api/auth/google",
             {
               email: response.data.email,
               name: response.data.name,

@@ -37,7 +37,7 @@ const handleSubmit = async (event) => {
         }
 
         const userId = localStorage.getItem('userId');
-      const response = await axios.post(`http://localhost:8080/api/auth/update/${userId}`, formData);
+      const response = await axios.post(`https://alumni-site.onrender.com/api/auth/update/${userId}`, formData);
       if (response.status === 200) {
       toast.success(response.data.message);
         console.log('User added successfully:', response.data);
